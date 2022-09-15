@@ -1,0 +1,43 @@
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 110px solid red;
+  position: absolute;
+  z-index: 1;
+  top: 73px;
+  left: 143px;
+  transform-origin: 50% 70%;
+}
+
+.time {
+  width: 280px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+  margin-bottom: 10px;
+}
+
+.loader-animator {
+  animation: spinner 0.5s linear infinite;
+  z-index: 2;
+  margin: 20px;
+  height: 40px;
+  width: 40px;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: red yellow green blue;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
