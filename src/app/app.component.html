@@ -2,3 +2,10 @@
   <div #arrow class="arrow"></div>
   <img class="time" src="../assets/img//1200px-Horloĝo_001.svg.png" alt="time">
 </div>
+
+<div class="container" *ngFor="let post of allPosts">
+  <div>{{post.id}}</div>
+  <div>{{post.title}}</div>
+  <div>{{post.body}}</div>
+  <hr>
+</div>
